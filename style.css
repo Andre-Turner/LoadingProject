@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgba(41, 41, 85, 0.212);
+    background: linear-gradient(to bottom right, rgb(4, 116, 4), rgb(37, 194, 44), rgb(164, 233, 54));
     height: 100vh;
     display: flex;
     align-items: center;
@@ -47,10 +47,17 @@ body{
     color: #fff;
     text-align: center;
     line-height: 200px;
+    animation: a2 2s linear infinite;
 }
 
 @keyframes a1 {
     to{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes a2 {
+    to{
+        transform: rotate(-360deg);
     }
 }
